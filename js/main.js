@@ -15,10 +15,10 @@ const textLoad = () => {
         }, 0);
         setTimeout(() => {
             text.textContent = "I'm a Software Engineer";
-        }, 4000);
+        }, 2000);
         setTimeout(() => {
             text.textContent = "Nice to meet you";
-        }, 8000); //1s = 1000 milliseconds
+        }, 4000); //1s = 1000 milliseconds
     }
 textLoad();
-setInterval(textLoad, 12000);
+setInterval(textLoad, 6000);

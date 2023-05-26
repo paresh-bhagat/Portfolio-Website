@@ -98,18 +98,14 @@
 }
 
 .typewritter{
-	font-family: monospace;
 	display: inline-block
 }
 
 .typewritter-text{
 	display: inline-block;
 	overflow: hidden;
-	letter-spacing: 3px;
 	animation: animate 4s steps(34) infinite;
 	white-space: nowrap;
-	font-size: 40px;
-	font-weight: 700;
 	border-right: 4px solid rgb(44, 42, 42);
 	box-sizing: border-box;
 }
@@ -121,11 +117,4 @@
 	to{
 		width: 100%
 	}
-}
-
-@keyframes blink{
-	from,to{
-		border-color: transparent
-	}
-	50%{border-color: rgb(46, 44, 44)}
 }
