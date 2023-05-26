@@ -1,10 +1,14 @@
-body {
-    min-height: 100vh;
-    overflow-x: hidden;
-  }
-
 .text-center {
     text-align: center!important;
+}
+
+.hero-wrap .hero-bg, .hero-wrap .hero-bg-slideshow, .hero-wrap .hero-mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 3rem;
+    background-repeat: no-repeat;
+    z-index: -1;
 }
 
 .h-100 {
@@ -13,11 +17,6 @@ body {
 
 .d-flex {
     display: flex!important;
-}
-
-.text-bg-dark {
-    color: #fff!important;
-    background-color: RGBA(33,37,41,var(--bs-bg-opacity,1))!important;
 }
 
 .vertical-nav {
@@ -64,7 +63,7 @@ body {
 }
   
 .nav-link:hover{
-      background:#f3f2f2;
+      background:#312e2e;
 }
 
 .text-primary{
@@ -90,3 +89,43 @@ body {
       width: 100%;
     }
 }  
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+.typewritter{
+	font-family: monospace;
+	display: inline-block
+}
+
+.typewritter-text{
+	display: inline-block;
+	overflow: hidden;
+	letter-spacing: 3px;
+	animation: animate 4s steps(34) infinite;
+	white-space: nowrap;
+	font-size: 40px;
+	font-weight: 700;
+	border-right: 4px solid rgb(44, 42, 42);
+	box-sizing: border-box;
+}
+
+@keyframes animate{
+	from{
+		width: 0%
+	}
+	to{
+		width: 100%
+	}
+}
+
+@keyframes blink{
+	from,to{
+		border-color: transparent
+	}
+	50%{border-color: rgb(46, 44, 44)}
+}
