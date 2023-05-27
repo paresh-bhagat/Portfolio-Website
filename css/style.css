@@ -106,7 +106,7 @@ a.sidebar-link {
     position: absolute;
     top: 3rem;
     background-repeat: no-repeat;
-    filter: brightness(20%);
+    filter: brightness(40%);
     z-index: -1;
 }
 
@@ -131,4 +131,9 @@ a.sidebar-link {
 	to{
 		width: 100%
 	}
+}
+
+
+.top-navbar{
+    background-color: rgb(34, 32, 32);
 }
