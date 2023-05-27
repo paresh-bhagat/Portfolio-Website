@@ -1,11 +1,12 @@
-$(function() {
-    $('#sidebarCollapse').on('click', function () { 
-        $('#sidebar, #content').toggleClass('active');
+// for our side bar
 
-    });
+const toggler = document.querySelector(".btn");
+
+toggler.addEventListener("click", function(){
+document.querySelector("#sidebar").classList.toggle("collapsed");
 });
 
-
+// for typewrite section
 
 const text = document.querySelector(".typewritter-text");
 
