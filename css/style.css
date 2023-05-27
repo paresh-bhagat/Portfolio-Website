@@ -1,3 +1,5 @@
+/*********************** common to all *************************************/
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 *,
@@ -14,9 +16,9 @@ body {
 margin: 0;
 /*background-image: url("../images/home.jpg");
 background-repeat: no-repeat;
-font-family: 'Poppins', sans-serif; 
 background-position: center bottom; 
 background-size: cover;*/
+font-family: 'Poppins', sans-serif; 
 }
 
 a{
@@ -29,11 +31,15 @@ li{
     list-style: none;
 }
 
+/************************ main div *********************/
+
 .wrapper {
     align-items: stretch;
     display: flex;
     width: 100%;
 }
+
+/********************* sidebar ****************************/
 
 #sidebar {
     max-width: 264px;
@@ -41,6 +47,18 @@ li{
     transition: all 0.35s ease-in-out;
     background-color: rgb(34, 32, 32);
 }
+
+#sidebar.collapsed {
+    margin-left: -264px;
+}
+
+/******************* top navbar ********************************/
+
+.top-navbar{
+    background-color: rgb(34, 32, 32);
+}
+
+/**************** main content dic********************/
 
 .main {
 
@@ -52,43 +70,8 @@ li{
     transition: all 0.35s ease-in-out;
     
 }
-    
-.sidebar-logo {  
-    padding: 1.15rem 1.5rem; 
-}
-    
-.sidebar-logo a {
-    color: #e9ecef;
-    font-size: 1.25rem;
-    font-weight: 600;
-}
 
-.sidebar-nav {
-    padding: 0;
-}
-
-.sidebar-header {
-    color: #e9ecef;
-    font-size: 0.75rem;
-    padding: 1.5rem 1.5rem 0.375rem;
-}
-
-a.sidebar-link {
-
-    padding: .625rem 1.625rem;
-    
-    color: #e9ecef;
-    
-    position: relative;
-    
-    display: block;
-    
-    font-size: 1rem;
-}
-
-#sidebar.collapsed {
-    margin-left: -264px;
-}
+/*** whats this **/
 
 @media (min-width:768px) {
     .content{
@@ -96,9 +79,7 @@ a.sidebar-link {
     }
 }
 
-/************************************************************************************************/
-
-/* our first section */
+/************our first section *********************************/
 
 .hero-wrap .hero-bg, .hero-wrap .hero-bg-slideshow, .hero-wrap .hero-mask {
     width: 100%;
@@ -106,6 +87,8 @@ a.sidebar-link {
     position: absolute;
     top: 3rem;
     background-repeat: no-repeat;
+    background-position: center bottom; 
+    background-size: cover;
     filter: brightness(40%);
     z-index: -1;
 }
@@ -131,9 +114,4 @@ a.sidebar-link {
 	to{
 		width: 100%
 	}
-}
-
-
-.top-navbar{
-    background-color: rgb(34, 32, 32);
 }
